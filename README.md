@@ -35,11 +35,11 @@ viewer such as `feh`.
 
 Source:
 
-![Greyscale version](http://i.imgur.com/DRZ9uwC.png)
+![Greyscale version](https://i.imgur.com/DRZ9uwC.png)
 
 Output:
 
-![Colorized version](http://i.imgur.com/ZN129Tw.png)
+![Colorized version](https://i.imgur.com/ZN129Tw.png)
 
 ## Copyright
 
