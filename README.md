@@ -43,8 +43,8 @@ Output:
 
 ## Copyright
 
-This program is brought to you under the WTFPL license. For further
-informations please read the COPYING file.
+This program is brought to you under WTFPL. For further informations please
+read the COPYING file.
 
 ## References
 
