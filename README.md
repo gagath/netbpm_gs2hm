@@ -31,6 +31,16 @@ Example usage:
 You can then visualize the resulting image using a Netpbm-compatible image
 viewer such as `feh`.
 
+## Sample
+
+Source:
+
+![Greyscale version](http://i.imgur.com/DRZ9uwC.png)
+
+Output:
+
+![Colorized version](http://i.imgur.com/ZN129Tw.png)
+
 ## Copyright
 
 This program is brought to you under the WTFPL license. For further
