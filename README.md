@@ -12,6 +12,11 @@ Though PPM is not a common file format, you may use it as an intermediate
 result for easy processing on it and then convert it to an efficient format
 such as PNG.
 
+You can convert images to ASCII PGM using ImageMagick:
+
+    :::console
+    $ convert input.png -compress none output.png
+
 ## Building
 
 This program is bare C, you will only need a C compiler and run the Makefile:
@@ -33,12 +38,7 @@ viewer such as `feh`.
 
 ## Sample
 
-Source:
-
 ![Greyscale version](https://i.imgur.com/DRZ9uwC.png)
-
-Output:
-
 ![Colorized version](https://i.imgur.com/ZN129Tw.png)
 
 ## Copyright
