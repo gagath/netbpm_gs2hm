@@ -1,0 +1,47 @@
+.TH NETBPM_GS2S "1" "June 2015" "" "User Commands"
+
+.SH NAME
+netbpm_gs2hs \- convert greymap images to colorized images
+
+.SH SYNOPSIS
+.B netbpm_gs2hs
+
+.SH DESCRIPTION
+This program may be used to convert grayscale images to heatmap-like ones. The
+Netbpm is used here for it simplicity (ASCII support only). Although PGM/PPM
+are not common file formats, you may use it as an intermediate result for easy
+processing on it and then convert it to an efficient format such as PNG.
+
+.SH OPTIONS
+This program only use standard input/output and does not accept any options.
+
+.SH NOTES
+
+You can convert images to ASCII PGM using the ImageMagick
+.B convert
+program:
+.IP
+convert input.png -compress none output.png
+
+.SH EXAMPLE
+Example usage:
+.IP
+netpbm_gs2hm < input.pgm > result.ppm
+.PP
+You can then visualize the resulting image using a Netpbm-compatible image
+viewer such as
+.BR feh .
+
+.SH AUTHOR
+Romain 'MicroJoe' PORTE.
+
+.SH COPYRIGHT
+Copyright \(co 2015 Romain PORTE.
+License GPLv3+: GNU General Public License version 3 or later
+<http://gnu.org/licenses/gpl.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+.SH "SEE ALSO"
+convert(1), feh(1)
