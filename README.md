@@ -46,8 +46,8 @@ viewer such as `feh`.
 
 ## Copyright
 
-This program is brought to you under WTFPL. For further informations please
-read the COPYING file.
+This program is brought to you under GNU General Public License v3+. For
+further informations please read the COPYING file.
 
 ## References
 
