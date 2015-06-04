@@ -1,36 +1,39 @@
 # Netpbm Grayscale to Heatmap-like Pixmap
 
-Read an ASCII PPM Grayscale image (`*.pgm`) on stdin and returns an hot-to-cold
+Read an ASCII PGM Grayscale image (`*.pgm`) on stdin and returns an hot-to-cold
 ASCII PPM RGB image (`*.ppm`) on stdout.
 
 ## Description
 
 This program may be used to convert grayscale images to heatmap-like ones. The
-PPM format is used here for it simplicity (ASCII support only).
-
-Though PPM is not a common file format, you may use it as an intermediate
-result for easy processing on it and then convert it to an efficient format
-such as PNG.
+[Netbpm format](https://en.wikipedia.org/wiki/Netpbm_format) is used here for it
+simplicity (ASCII support only). Although PGM/PPM are not common file formats,
+you may use it as an intermediate result for easy processing on it and then
+convert it to an efficient format such as PNG.
 
 You can convert images to ASCII PGM using ImageMagick:
 
-    :::console
     $ convert input.png -compress none output.png
 
 ## Building
 
-This program is bare C, you will only need a C compiler and run the Makefile:
+This program is written in bare C, you will only need a C compiler and run the
+Makefile:
 
-    :::console
     $ make
 
-No dependencies apart from the C standard library are required.
+No dependencies (apart from the C standard library) are required.
+
+File extensions memento for PPM files:
+
+ - `*.pbm` : portable bitmap (black & white)
+ - `*.pgm` : portable greymap (greyscale)
+ - `*.ppm` : portable pixmap (RGB)
 
 ## Usage
 
 Example usage:
 
-    :::console
     $ ./netpbm_gs2hm < input.pgm > result.ppm
 
 You can then visualize the resulting image using a Netpbm-compatible image
